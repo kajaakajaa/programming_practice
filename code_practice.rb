@@ -107,7 +107,7 @@ def hello
   puts "さいなら"
 end
 # hello
-kajaa = hello
-puts kajaa
+kajaakajaa = hello
+puts kajaakajaa
 
 
