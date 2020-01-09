@@ -101,12 +101,13 @@
 #   puts key + ": " + val
 # end
 
-# def hello
-#   puts "こんちわ"
-#   return "haisai"
-#   puts "さいなら"
-# end
-# # hello
-# kajaa = hello
-# puts kajaa
+def hello
+  puts "こんちわ"
+  return "haisai"
+  puts "さいなら"
+end
+# hello
+kajaa = hello
+puts kajaa
+
 
