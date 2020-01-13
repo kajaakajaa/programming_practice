@@ -14,6 +14,20 @@
 
 # bank = Bank.new("保毛")
 # puts bank.correct_password?("保毛")
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# class Bank
+#   def initialize(pass)
+#     @pass = pass
+#   end
+
+#   def correct_password?(entered_word)
+#     @pass == entered_word
+#   end
+# end
+
+# bank = Bank.new("kajaa")
+# puts bank.correct_password?("kajaa")
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
 # i = 2
 # while i < 300
@@ -100,7 +114,7 @@
 # food.each do |key,val|
 #   puts key + ": " + val
 # end
-
+#                    〜return〜
 # def hello
 #   puts "こんちわ"
 #   return "haisai"
@@ -126,3 +140,23 @@
 
 # puts add("kajaaのIQ ",5.to_s)
 #ーーーーーーーーーーーーーーーーー
+#好きな食べ物
+class Kajaa
+  FAVORITE = ["寿司","鉄火どん","フォー","美女"].freeze
+  
+  def correct?(selected_food)
+    correct = FAVORITE & selected_food
+    if correct.any?
+      text = "そうです、わしの好きな食べ物は"
+      text += correct.join("＆")
+      text += "ですわい。"
+    else
+      "....無いね.."
+    end
+  end
+end
+
+kajaa = Kajaa.new
+puts kajaa.correct?(["美女"])
+
+
