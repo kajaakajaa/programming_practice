@@ -101,13 +101,28 @@
 #   puts key + ": " + val
 # end
 
-def hello
-  puts "こんちわ"
-  return "haisai"
-  puts "さいなら"
-end
+# def hello
+#   puts "こんちわ"
+#   return "haisai"
+#   puts "さいなら"
+# end
+# # hello
 # hello
-kajaakajaa = hello
-puts kajaakajaa
+# puts kajaakajaa
+#ーーーーーーーーーーーーーーーーー
+#　↓repeatはあくまで任意のメソッドで自由に変えれる
+# def repeat(s)
+#   puts "グスーヨー"
+#   return s * 5
+# end
 
+# repeat("")
+# puts repeat("haisai")
+#ーーーーーーーーーーーーーーーーー
+# def add(a,b)
+#   puts "実は"
+#   a + b
+# end
 
+# puts add("kajaaのIQ ",5.to_s)
+#ーーーーーーーーーーーーーーーーー
