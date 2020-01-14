@@ -130,7 +130,7 @@
 #   return s * 5
 # end
 
-# repeat("")
+# # repeat("")
 # puts repeat("haisai")
 #ーーーーーーーーーーーーーーーーー
 # def add(a,b)
@@ -141,22 +141,44 @@
 # puts add("kajaaのIQ ",5.to_s)
 #ーーーーーーーーーーーーーーーーー
 #好きな食べ物
-class Kajaa
-  FAVORITE = ["寿司","鉄火どん","フォー","美女"].freeze
+# class Kajaa
+#   FAVORITE = ["寿司","鉄火どん","フォー","美女"].freeze
   
-  def correct?(selected_food)
-    correct = FAVORITE & selected_food
-    if correct.any?
-      text = "そうです、わしの好きな食べ物は"
-      text += correct.join("＆")
-      text += "ですわい。"
-    else
-      "....無いね.."
-    end
-  end
+#   def correct?(selected_food)
+#     correct = FAVORITE & selected_food # ←FAVORITE と selected_foodに同じ配列要素が在れば抽出するという演算子→ &
+#     if correct.any?
+#       text = "そうです、わしの好きな食べ物は"
+#       text += correct.join("＆")
+#       text += "ですわい。"
+#     else
+#       "....無いね.."
+#     end
+#   end
+# end
+
+# kajaa = Kajaa.new
+# puts kajaa.correct?(["チキン"])
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ゲッターとセッター
+# class User
+#   def initialize(user_name)
+#     @user_name = user_name
+#   end
+#   def name=(entered_name)
+#     @user_name = entered_name
+#   end
+#   def user_name
+#     @user_name
+#   end
+# end
+# user = User.new("kajaa")
+# puts user.user_name
+
+def tax_include(a)
+  float = a * 1.08
+  float.to_i
 end
 
-kajaa = Kajaa.new
-puts kajaa.correct?(["美女"])
-
-
+puts tax_include(10)
+puts tax_include(1000)
+puts tax_include(200)
