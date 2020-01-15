@@ -173,12 +173,29 @@
 # end
 # user = User.new("kajaa")
 # puts user.user_name
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# def tax_include(a)
+#   float = a * 1.08
+#   float.to_i
+# end
 
-def tax_include(a)
-  float = a * 1.08
-  float.to_i
-end
+# puts tax_include(10)
+# puts tax_include(1000)
+# puts tax_include(200)
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# def array_sum(array)
+#   array.sum
+# end
 
-puts tax_include(10)
-puts tax_include(1000)
-puts tax_include(200)
+# puts array_sum([100])
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+
