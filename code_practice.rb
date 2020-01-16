@@ -189,6 +189,25 @@
 
 # puts array_sum([100])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+def fizzbuzz(n)
+  (1..n).each do |n|
+    if n % 3 == 0 && n % 5 == 0
+      puts "FizzBuzz"
+
+    elsif n % 3 == 0
+      puts "Fizz"
+
+    elsif n % 5 == 0
+      puts "Buzz"
+
+    else
+      n.to_s
+    end
+  end
+end
+
+fizzbuzz(1)
+
 
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
