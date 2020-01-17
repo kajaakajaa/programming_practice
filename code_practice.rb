@@ -201,13 +201,12 @@ def fizzbuzz(n)
       puts "Buzz"
 
     else
-      n.to_s
+      puts n
     end
   end
 end
 
-fizzbuzz(1)
-
+fizzbuzz(32)
 
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
