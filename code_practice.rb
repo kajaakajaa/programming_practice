@@ -189,29 +189,48 @@
 
 # puts array_sum([100])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-def fizzbuzz(n)
-  (1..n).each do |n|
-    if n % 3 == 0 && n % 5 == 0
-      puts "FizzBuzz"
+# def fizzbuzz(n)
+#   (1..n).each do |n|
+#     if n % 3 == 0 && n % 5 == 0
+#       puts "FizzBuzz"
 
-    elsif n % 3 == 0
-      puts "Fizz"
+#     elsif n % 3 == 0
+#       puts "Fizz"
 
-    elsif n % 5 == 0
-      puts "Buzz"
+#     elsif n % 5 == 0
+#       puts "Buzz"
 
-    else
-      puts n
-    end
+#     else
+#       puts n
+#     end
+#   end
+# end
+
+# fizzbuzz(32)
+
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# def create_array(n)
+#   (1..n).to_a
+# end
+
+# puts create_array(5)
+
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+def middle(array)
+  if array.length % 2 == 1
+    return array[(array.length / 2) -1]
+
+  elsif array.length % 2 == 0
+    return array[array.length / 2]
+
   end
 end
 
-fizzbuzz(32)
+puts middle([1,2,3,4,5,6])
+# もっかい見直す。
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# puts 5 / 2
 
-
-#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
