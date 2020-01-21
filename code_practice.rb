@@ -216,23 +216,41 @@
 # puts create_array(5)
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-def middle(array)
-  if array.length % 2 == 1
-    return array[(array.length / 2) -1]
+# def middle(array)
+#   if array.length % 2 == 1
+#     return array[array.length / 2]
 
-  elsif array.length % 2 == 0
-    return array[array.length / 2]
+#   elsif array.length % 2 == 0
+#     return "偶数なので #{array[(array.length / 2) - 1]} です"
+#   end
+# end
 
-  end
+# puts middle([1,2,3,4,5,6])
+
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# def mod_sum(array, n)
+#   return array.length > 0 ? array.map{ |number| number % n }.inject{ |sum, number| sum + number } : 0
+
+
+# ↑ "array.length > 0" が、if(もし true なら)、array.map{ |number| number % n }.inject{ |sum, number| sum + number }。
+# : より右側。false(else) なら " 0 "
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+def mod_sum(array,n)
+  return array.length >= 1 ? array.map{ |num| num % n}.inject{ |sum,num| sum + num} : "nil"
 end
 
-puts middle([1,2,3,4,5,6])
-
-#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-# puts 5 / 2
+puts mod_sum([], 1)
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
