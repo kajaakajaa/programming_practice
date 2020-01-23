@@ -235,13 +235,21 @@
 # ↑ "array.length > 0" が、if(もし true なら)、array.map{ |number| number % n }.inject{ |sum, number| sum + number }。
 # : より右側。false(else) なら " 0 "
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-def mod_sum(array,n)
-  return array.length >= 1 ? array.map{ |num| num % n}.inject{ |sum,num| sum + num} : "nil"
+# def mod_sum(array,n)
+#   return array.length >= 1 ? array.map{ |num| num % n}.inject{ |sum,kajaa| sum + kajaa} : "nil"
+# end
+
+# puts mod_sum([1,2,3], 2)
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 実装内容。
+# filterメソッドは配列arrayとある要素itemを引数に取り、
+# arrayからitemに一致する要素を取り除いた配列を返すメソッドです
+def filter(array,item)
+  array - Array[item]
 end
 
-puts mod_sum([], 1)
-
-#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 実行例
+puts filter(["a", "b", "c"], "b")
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
