@@ -1,3 +1,5 @@
+require "pry"
+
 # class Bank
 #   def initialize(password)
 #     @password = password
@@ -230,8 +232,9 @@
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # def mod_sum(array, n)
 #   return array.length > 0 ? array.map{ |number| number % n }.inject{ |sum, number| sum + number } : 0
+# end
 
-
+# puts mod_sum([1,2,3],2)
 # ↑ "array.length > 0" が、if(もし true なら)、array.map{ |number| number % n }.inject{ |sum, number| sum + number }。
 # : より右側。false(else) なら " 0 "
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
@@ -244,13 +247,16 @@
 # 実装内容。
 # filterメソッドは配列arrayとある要素itemを引数に取り、
 # arrayからitemに一致する要素を取り除いた配列を返すメソッドです
-def filter(array,item)
-  array - Array[item]
-end
 
-# 実行例
-puts filter(["a", "b", "c"], "b")
+# def filter(array,item)
+#   array - Array(item)
+# end
+
+# # 実行例
+# puts filter(["a", "b", "c"], ["b","c"])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#Hash[key,value] -> https://www.javadrive.jp/ruby/hash/index3.html
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
