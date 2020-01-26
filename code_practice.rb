@@ -256,8 +256,27 @@ require "pry"
 # puts filter(["a", "b", "c"], ["b","c"])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #Hash[key,value] -> https://www.javadrive.jp/ruby/hash/index3.html
+# def create_hash(keys, values)
+#     hash = Hash[keys.zip values]
+# end
 
+# puts create_hash(["a","ka","c"],["A","jaa",3])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+class Car
+  def speed(km/h)
+    @speed = km/h
+  end
+  # def @speed
+  #   speed
+  # end
+  def time(km/h)
+    @time = time
+  end
+end
+
+car = Car.new(50)
+# puts car.speed
+puts speed
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
