@@ -263,19 +263,26 @@ require "pry"
 # puts create_hash(["a","ka","c"],["A","jaa",3])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 class Car
-  def speed(km/h)
-    @speed = km/h
+  def initialize(speed)
+    @speed = speed
   end
-  # def @speed
-  #   speed
-  # end
-  def time(km/h)
-    @time = time
+  def speed
+    @speed
+  end
+  def time(distance)
+     time = distance / speed
+      return time
+
+    # elsif speed == 0
+    #     puts "nil"
+    
   end
 end
 
-car = Car.new(50)
+car = Car.new(0)
 # puts car.speed
+
+speed = car.time(200)
 puts speed
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
