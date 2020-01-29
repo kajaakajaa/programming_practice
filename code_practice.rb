@@ -270,21 +270,29 @@ class Car
     @speed
   end
   def time(distance)
-     time = distance / speed
+    if speed == 0
+      return "nil"
+    end
+    time = distance / speed
+    time = time.to_s + "kmです。"
       return time
-
-    # elsif speed == 0
-    #     puts "nil"
-    
   end
 end
 
 car = Car.new(0)
-# puts car.speed
+puts car.speed
 
-speed = car.time(200)
+speed = car.time(10)
 puts speed
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# def kajaa(a,b)
+#   if b == 0
+#     return "nil"
+#   end
+#   return a / b
+# end
+
+# puts kajaa(6,2)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
