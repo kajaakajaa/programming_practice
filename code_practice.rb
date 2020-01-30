@@ -262,28 +262,28 @@ require "pry"
 
 # puts create_hash(["a","ka","c"],["A","jaa",3])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-class Car
-  def initialize(speed)
-    @speed = speed
-  end
-  def speed
-    @speed
-  end
-  def time(distance)
-    if speed == 0
-      return "nil"
-    end
-    time = distance / speed
-    time = time.to_s + "kmです。"
-      return time
-  end
-end
+# class Car
+#   def initialize(speed)
+#     @speed = speed
+#   end
 
-car = Car.new(0)
-puts car.speed
+#   attr_accessor :speed
 
-speed = car.time(10)
-puts speed
+#   def time(distance)
+#     if self.speed == 0
+#       return nil
+#     end
+
+#     time = distance / self.speed
+#       return time.to_s + "kmです"
+#   end
+# end
+
+# car = Car.new(20)
+# # puts car.speed
+
+# speed = car.time(100)
+# puts speed
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # def kajaa(a,b)
 #   if b == 0
@@ -294,6 +294,8 @@ puts speed
 
 # puts kajaa(6,2)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
