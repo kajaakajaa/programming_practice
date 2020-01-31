@@ -294,8 +294,12 @@ require "pry"
 
 # puts kajaa(6,2)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+def count(array) #inject以下は inject の処理。→ https://www.sejuku.net/blog/19219
+  hash = Hash.new(0)
+  array.inject(hash){|hash, kajaa| hash[kajaa] += 1; hash}
+end
 
-
+puts count(["a", "b", "c", "a", "c", "c"])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
