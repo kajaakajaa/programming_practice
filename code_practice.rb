@@ -299,18 +299,26 @@ require "pry"
 # countメソッドは文字列を要素とした配列を受け取り、
 # 要素名をキーに出現回数を値としたハッシュを返すメソッドです。参照→ https://blog.toshimaru.net/ruby-inject/
 
-def count(array)
-  hash = Hash.new(0)
-  array.inject(Hash.new(0)){|hash,key| hash[key]+=1; hash}
-end
+# def count(array)
+#   hash = Hash.new(0)
+#   array.inject(Hash.new(0)){|hash,key| hash[key]+=1; hash}
+# end
 
-puts count(["a", "b", "c", "a", "c", "c"])
+# puts count(["a", "b", "c", "a", "c", "c"])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
 # array = 1,2,3,4,5,6
 # array.inject (6){ |sum,num| pp sum+=num}
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+class Array
+end
+class MyArray < Array
+  def multply(n)
+    multply *= n
+  end
+end
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
