@@ -311,14 +311,24 @@ require "pry"
 # array.inject (6){ |sum,num| pp sum+=num}
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 実装内容
+# Arrayを継承したMyArrayを実装する
+# MyArrayにインスタンスメソッドmultiplyを実装する。
+# multiplyメソッドは引数に整数nをとり、MyArrayの全ての要素をn倍して返すメソッドです。
+
+#参照 →mapメソッドでn倍に・・・ https://makeslife-better.com/ruby-map%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%A7n%E5%80%8D%E3%81%AB%E3%83%BB%E3%83%BB%E3%83%BB/
 class Array
 end
 class MyArray < Array
-  def multply(n)
-    multply *= n
+  def multiply(n)
+    self.map{ |num| num * n}
   end
 end
 
+my_array = MyArray[1, 2, 3, 4]
+p my_array.class.superclass
+
+p my_array.multiply(5)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
