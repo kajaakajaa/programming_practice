@@ -317,19 +317,25 @@ require "pry"
 # multiplyメソッドは引数に整数nをとり、MyArrayの全ての要素をn倍して返すメソッドです。
 
 #参照 →mapメソッドでn倍に・・・ https://makeslife-better.com/ruby-map%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%A7n%E5%80%8D%E3%81%AB%E3%83%BB%E3%83%BB%E3%83%BB/
-class Array
-end
-class MyArray < Array
-  def multiply(n)
-    self.map{ |num| num * n}
-  end
-end
+# class Array
+# end
+# class MyArray < Array
+#   def multiply(n)
+#     self.map{ |num| num * n} # → .mapは各要素numに処理をかける。
+#   end
+# end
 
-my_array = MyArray[1, 2, 3, 4]
-p my_array.class.superclass
+# my_array = MyArray.new([1, 2, 3, 4])
+# p my_array.class.superclass  # → myarrayのクラスの親クラスは何？ のメソッド。
 
-p my_array.multiply(5)
+# p my_array.multiply(5)
+# puts my_array.class
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# str = String.new("あ")
+
+# puts String.class
+# puts str.class
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
