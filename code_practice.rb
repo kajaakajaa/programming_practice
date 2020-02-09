@@ -337,6 +337,17 @@ require "pry"
 # puts str.class
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+class Kajaa
+  def initialize(name,age)
+    @name = name
+    @age = age
+  end
+  def introduce
+    "ワンヌナメーヤ" + @name + "ヤサ。"
+  end
+  attr_accessor :name, :age
+end
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
