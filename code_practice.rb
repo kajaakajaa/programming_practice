@@ -337,17 +337,56 @@ require "pry"
 # puts str.class
 
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-class Kajaa
-  def initialize(name,age)
-    @name = name
-    @age = age
-  end
-  def introduce
-    "ワンヌナメーヤ" + @name + "ヤサ。"
-  end
-  attr_accessor :name, :age
-end
+# class Kajaa
+#   def initialize(name,age)
+#     @name = name
+#     @age = age
+#   end
+#   def introduce
+#     "ワンヌナメーヤ" + @name + "ヤサ。"
+#   end
+#   attr_accessor :name, :age
+# end
 
+# kajaa = Kajaa.new("kazuhiro","")
+# puts kajaa.introduce
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# module Animal
+#   def cat
+#     puts "cute"
+#   end
+# end
+
+# class Kajaa
+#   include Animal
+# end
+
+# kajaa = Kajaa.new
+# kajaa.cat
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# module Animal
+#   def cat
+#     puts "cute"
+#   end
+# end
+
+# class Kajaa
+#   extend Animal
+# end
+
+# Kajaa.cat
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
