@@ -10,3 +10,4 @@ end
 
 kajaayassa = Yassa.new("kaja",32)
 puts kajaayassa.introduce
+puts Yassa.superclass
