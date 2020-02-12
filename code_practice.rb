@@ -326,7 +326,7 @@ require "pry"
 # end
 
 # my_array = MyArray.new([1, 2, 3, 4])
-# p my_array.class.superclass  # → myarrayのクラスの親クラスは何？ のメソッド。
+# p my_array.class.superclass
 
 # p my_array.multiply(5)
 # puts my_array.class
@@ -335,21 +335,6 @@ require "pry"
 
 # puts String.class
 # puts str.class
-
-#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-# class Kajaa
-#   def initialize(name,age)
-#     @name = name
-#     @age = age
-#   end
-#   def introduce
-#     "ワンヌナメーヤ" + @name + "ヤサ。"
-#   end
-#   attr_accessor :name, :age
-# end
-
-# kajaa = Kajaa.new("kazuhiro","")
-# puts kajaa.introduce
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # module Animal
 #   def cat
@@ -375,9 +360,44 @@ require "pry"
 # end
 
 # Kajaa.cat
+# kajaa = Kajaa.new
+# puts kajaa.kind_of?(Kajaa)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 定数を引き出す。セッターの応用。
 
+class Kajaa
+  LANGUAGE = "English"  # ← 定数
 
+  def initialize(name,age)
+    @name = name
+    @age = age
+  end
+  
+  def introduce
+    "i'm " + @name
+  end
+
+  attr_accessor :name, :age
+end
+
+class Yassa < Kajaa
+  LANGUAGE = "日本語"
+
+  def introduce
+   super + "そして" + @age.to_s
+  end
+
+end
+
+yassa = Yassa.new("かじゃー",32)
+# puts yassa.introduce
+yassa.name = "かじゃこ,"
+yassa.age = 18
+puts yassa.introduce
+puts
+puts "Yassaクラスの言語は、" + Yassa::LANGUAGE + "のページです。"
+
+# puts yassa.class.superclass  ← Yasssaをyassa(オブジェクト化して.classで、この階層のクラスを確認、.class.superclassで、親クラスの確認)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
