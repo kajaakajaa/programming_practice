@@ -1,5 +1,15 @@
-require "./code_practice.rb"
+# require "./code_practice.rb"
 
+class Kajaa
+  def initialize(name,age)
+    @name = name
+    @age = age
+  end
+  def introduce
+    "ワンヌナメーヤ" + @name + "ヤサ。"
+  end
+  attr_accessor :name, :age
+end
 class Yassa < Kajaa
   def introduce
     
