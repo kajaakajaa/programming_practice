@@ -365,41 +365,55 @@ require "pry"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # 定数を引き出す。セッターの応用。
 
-class Kajaa
-  LANGUAGE = "English"  # ← 定数
+# class Kajaa
+#   LANGUAGE = "English"  # ← 定数
 
-  def initialize(name,age)
-    @name = name
-    @age = age
-  end
+#   def initialize(name,age)
+#     @name = name
+#     @age = age
+#   end
   
-  def introduce
-    "i'm " + @name
-  end
+#   def introduce
+#     "i'm " + @name
+#   end
 
-  attr_accessor :name, :age
-end
+#   attr_accessor :name, :age
+# end
 
-class Yassa < Kajaa
-  LANGUAGE = "日本語"
+# class Yassa < Kajaa
+#   LANGUAGE = "日本語"
 
-  def introduce
-   super + "そして" + @age.to_s
-  end
+#   def introduce
+#    super + "そして" + @age.to_s
+#   end
 
-end
+# end
 
-yassa = Yassa.new("かじゃー",32)
+# yassa = Yassa.new("かじゃー",32)
+# # puts yassa.introduce
+# yassa.name = "かじゃこ,"
+# yassa.age = 18
 # puts yassa.introduce
-yassa.name = "かじゃこ,"
-yassa.age = 18
-puts yassa.introduce
-puts
-puts "Yassaクラスの言語は、" + Yassa::LANGUAGE + "のページです。"
+# puts
+# puts "Yassaクラスの言語は、" + Yassa::LANGUAGE + "のページです。"
 
 # puts yassa.class.superclass  ← Yasssaをyassa(オブジェクト化して.classで、この階層のクラスを確認、.class.superclassで、親クラスの確認)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 要素数を指定した配列を作成する。
+# array = Array.new(5){|kajaa| "kajaa"}
+# p array
+# puts
+# array = Array.new(5){|kajaa| kajaa}
+# p array
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 配列の先頭に要素を追加する。
+# num = [1,2,3,4,5,6,7]
+# p num.unshift(0)
+
+# 配列の先頭を抜かす。
+# num = [1,2,3,4,5,6,7]
+# p num.shift # ← 抜いた数字を表示する。
+# p num # 抜いた残りの数字を表示する。
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
