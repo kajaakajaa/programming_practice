@@ -458,11 +458,30 @@ require "pry"
 # num = [1,2,3,4,5]
 # p num.map{|e| e * 2} # → num 内の、|要素| = 要素 * 2
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-nums = [1,2,3,4,5,6,7]
-nums.each do |num|
- puts num * 2
-end
+# Ruby 基礎配列操作編 4-6
+
+# class Kajaa
+#   def nums=(nums)
+#     @nums = nums
+#   end
+
+#   def num
+#     @name = @nums.each do |kazu|
+#      kazu * 2
+#     end
+#   end
+# end
+
+# kajaa = Kajaa.new
+# kajaa.nums = ([1,2,3,4,5,6,7])
+# puts kajaa.num
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+num = [1,2,3,4,5,6,7]
+num.each do |kajaa|
+  puts kajaa * 2
+end
+
+puts nums
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
