@@ -511,12 +511,54 @@ require "pry"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # 基礎 Hash編 1-3
 
-hash = Hash.new("undefined")
-p hash["ruby"]
+# hash = Hash.new("undefined")
+# p hash["ruby"]
 
 # A. "undefined"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 基礎 Hash編 2-5
+
+# class Language
+#   def initialize(name,version)
+#     @name = name
+#     @version = version
+#   end
+# end
+
+# ruby_241 = Language.new("ruby", "2.4.1")
+# ruby_2110 = Language.new("ruby", "2.1.10")
+
+# language ={
+#   ruby_241 => "end of life", # ※2通りの追加の仕方がある。
+# }
+
+# language[ruby_2110] = "stable" # ※2通りの追加の仕方がある。
+# p language
+# p language[ruby_241]
+
+# A. (language)(241と2110のバージョン詳細)
+# @name="ruby",@version="2.4.1">=>"end of life"。
+# @name="ruby", @version="2.1.10">=>"stable"。
+
+# A. p laguage(ruby_241)
+# "end of life"(241のタイトル名)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 基礎配列 Hash編 3-3
+
+# language = {
+#   "ruby" => "2.4.1",
+#   "python" => "3.6.1",
+#   "java" => "8.0"
+# }
+
+# language.each_key do |dainyuu|
+#   p dainyuu
+# end
+
+# A.
+# "ruby"
+# "python"
+# "java"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
