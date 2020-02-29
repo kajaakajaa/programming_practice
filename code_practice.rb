@@ -560,10 +560,81 @@ require "pry"
 # "python"
 # "java"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# キーをただ取得するのと、配列で取得する。比較
+
+# language = {
+#   "ruby" => "2.4.1",
+#   "python" => "3.6.1",
+#   "java" => "8.0"
+# }
+
+# p language.keys
+
+# language.each_key do |dainyuu|
+#   p dainyuu
+# end
+
+# A.
+# ["ruby", "python", "java"]
+# A.
+# "ruby"
+# "python"
+# "java"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ハッシュにキーがあるかを調べる。
+
+# language = {
+#   "ruby" => "2.4.1",
+#   "python" => "3.6.1",
+#   "java" => "8.0"
+# }
+
+# if language.key?("ruby")
+#   p "キーが存在しています"
+# end
+
+# A.
+# "キーが存在しています"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# キーと値を入れ替える。
+
+# language = {
+#   "ruby" => "2.4.1",
+#   "python" => "3.6.1",
+#   "java" => "8.0"
+# }
+
+# p language.invert
+
+# A.
+# {"2.4.1"=>"ruby", "3.6.1"=>"python", "8.0"=>"java"}
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 2つのハッシュを統合する
+
+# language = {
+#   "ruby" => "2.4.1",
+#   "python" => "3.6.1",
+#   "java" => "8.0"
+# }
+
+# p language_2 = {"golang" => "1.8"}
+# p language.merge(language_2)
+
+# A.
+# "golang"=>"1.8"}
+# A.
+# {"ruby"=>"2.4.1", "python"=>"3.6.1", "java"=>"8.0", "golang"=>"1.8"}
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 配列の要素の出現回数を数え上げる。
+
+def count_up(array)
+  hash = Hash.new(0)
+  array.each do |item|
+    hash[item] += 1 # デフォルト値である各要素"hash[item]" に+1 する事で要素をカウントする事が出来る。
+  end
+   return hash
+end
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
