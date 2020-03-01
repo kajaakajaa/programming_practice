@@ -627,15 +627,21 @@ require "pry"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # 配列の要素の出現回数を数え上げる。
 
-def count_up(array)
-  hash = Hash.new(0)
-  array.each do |item|
-    hash[item] += 1 # デフォルト値である各要素"hash[item]" に+1 する事で要素をカウントする事が出来る。
-  end
-   return hash
-end
+# def count_up(array)
+#   hash = Hash.new(0)
+#   array.each do |item|
+#     hash[item] += 1 # デフォルト値"hash"各要素"item"である hash[item]" に+1 する事で要素をカウントする事が出来る。
+#   end
+#    return hash
+# end
 
+# p count_up(["ruby","python","java","ruby","java"])
+
+# A.
+# {"ruby"=>2, "python"=>1, "java"=>2}
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ruby演習 配列 hash-class編 1-2〜
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
