@@ -640,9 +640,35 @@ require "pry"
 # A.
 # {"ruby"=>2, "python"=>1, "java"=>2}
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-# ruby演習 配列 hash-class編 1-2〜
+# ruby演習 配列 hash-class編 配列の作成
 
+# def create_array(n)
+#   (1..n).to_a
+# end
+
+# p create_array(3)
+
+# A.
+# [1, 2, 3]
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ruby演習 配列 hash-class編 配列の中央を返す。
+
+def middle(array)
+  if array.length % 2 == 1
+    array[array.length / 2]
+  
+  elsif array.length % 2 == 0
+    array[(array.length / 2) - 1]
+    
+  else
+    “nil”
+  end
+end
+
+p middle([1,2,3])
+
+# A.
+# 2
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
