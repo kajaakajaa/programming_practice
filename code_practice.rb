@@ -653,23 +653,33 @@ require "pry"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # ruby演習 配列 hash-class編 配列の中央を返す。
 
-def middle(array)
-  if array.length % 2 == 1
-    array[array.length / 2]
+# def middle(array)
+#   if array.length % 2 == 1
+#     array[array.length / 2]
   
-  elsif array.length % 2 == 0
-    array[(array.length / 2) - 1]
+#   elsif array.length % 2 == 0
+#     array[(array.length / 2) - 1]
     
-  else
-    “nil”
-  end
-end
+#   else
+#     “nil”
+#   end
+# end
 
-p middle([1,2,3])
+# p middle([1,2,3,4])
 
 # A.
 # 2
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 配列の要素の余りを合計する。
+
+def mod_sum(array,n)
+  return array.length >= 1 ? array.map{ |number| number % n}.inject(0){ |sum,
+   number| sum + number } : 0
+end
+
+  p mod_sum([1,2,3,4,5],1)
+  p mod_sum([1,2,3,4,5,6],2)
+  # mod_sum([3],2)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
