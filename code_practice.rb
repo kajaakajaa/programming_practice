@@ -672,16 +672,31 @@ require "pry"
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # 配列の要素の余りを合計する。
 
-def mod_sum(array,n)
-  return array.length >= 1 ? array.map{ |number| number % n}.inject(0){ |sum,
-   number| sum + number } : 0
-end
+# def mod_sum(array,n)
+#   return array.length >= 1 ? array.map{ |number| number % n}.inject(0){ |sum,
+#    number| sum + number } : 0
+# end
 
-  p mod_sum([1,2,3,4,5],1)
-  p mod_sum([1,2,3,4,5,6],2)
-  # mod_sum([3],2)
+  # p mod_sum([1,2,3,4,5],1)
+  # p mod_sum([1,2,3,4,5,6],2)
+  # p mod_sum([3],2)
+
+  # A.0
+  # A.3
+  # A.1
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# 要素のフィルタリング
+
+# def filter(array,item)
+#   array - Array(item)
+# end
+
+# p filter(["a","b","c"],["b","c"])
+
+# A.["a"]
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
