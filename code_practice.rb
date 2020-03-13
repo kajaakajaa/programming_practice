@@ -716,9 +716,35 @@ require "pry"
 # A.
 # {"a"=>2, "b"=>1, "c"=>3}
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ruby 演習 配列・Hash・class編。 クラスを継承する。
 
+# class Array
+# end
+# class MyArray < Array
+# 	def multiply(n)
+#     self.map{|num| num * n}
+#   end
+# end
 
+# my_array = MyArray[1, 2, 3, 4]
+# p my_array.class.superclass
+# # A.
+# # "Array"
+# p my_array.multiply(5)
+# A.
+# [5, 10, 15, 20]
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ruby 演習 基本操作編。 1-3
+
+# def repeat(s)
+# 	return s * 5
+# end
+# kajaa = repeat("haisai")
+# puts kajaa
+
+# repeat("Hello World!")
+# # A.
+# haisaihaisaihaisaihaisaihaisai
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
