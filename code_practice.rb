@@ -191,25 +191,24 @@ require "pry"
 
 # puts array_sum([100])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-def fizzbuzz(n)
-  (1..n).each do |n|
-    if n % 3 == 0 && n % 5 == 0
-      puts "FizzBuzz"
+# def fizzbuzz(n)
+#   (1..n).each do |n|
+#     if n % 3 == 0 && n % 5 == 0
+#       puts "FizzBuzz"
 
-    elsif n % 3 == 0
-      puts "Fizz"
+#     elsif n % 3 == 0
+#       puts "Fizz"
 
-    elsif n % 5 == 0
-      puts "Buzz"
+#     elsif n % 5 == 0
+#       puts "Buzz"
 
-    else
-      puts n
-    end
-  end
-end
+#     else
+#       puts n
+#     end
+#   end
+# end
 
-fizzbuzz(32)
-
+# fizzbuzz(32)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 # def create_array(n)
 #   (1..n).to_a
@@ -781,7 +780,17 @@ fizzbuzz(32)
 # p odd_sum(10)
 # A.25
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# ruby 演習 配列・Hash・Class編。 1-2 配列を作成する。
+
+def create(n)
+  (1..n).to_a
+end
+
+p create(3)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# hash = {1 => :a}
+
+# puts hash[1]
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
