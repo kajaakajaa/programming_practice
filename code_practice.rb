@@ -893,7 +893,7 @@ require "pry"
 # p nums.inject {|e,kajaa| e + kajaa} # ※reduce と同じ。
 # A. 15
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-# .to_? の種類。
+# .to_〇〇 の種類。
 
 # class Kajaa
 #   def create_1(n)
@@ -914,7 +914,29 @@ require "pry"
 # p kajaa.create_2(5)
 # p kajaa.create_3(5)
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Ruby 配列・Hash - Class 操作演習。 1-4 配列の要素の余りを合計する。
+
+# def mod_sum(array,n)
+#   if array.length >= 1
+#     return array.map{ |number| number % n}.inject{ |sum, number| sum + number }
+#   else
+#     0
+#   end
+# end
+
+# p mod_sum([1,2,3,4,5],1)
+# A.0
+# p mod_sum([1,2,3,4,5,6],2)
+# A.3
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+# Ruby 配列・Hash - Class 操作演習。 1-6 ハッシュを作成する。
+
+def create_hash(keys, values)
+  hash = Hash[keys.zip values] # -> 引数をhash化、zip接続する。
+end
+# メソッドを処理に当てはめる。
+
+p create_hash(["id:1","id:2","id:3"],["kajaa","waa","yassa"])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
