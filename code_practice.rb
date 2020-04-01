@@ -929,15 +929,18 @@ require "pry"
 # p mod_sum([1,2,3,4,5,6],2)
 # A.3
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-# Ruby 配列・Hash - Class 操作演習。 1-6 ハッシュを作成する。
+# Ruby 配列・Hash - Class 操作演習。 1-6 ハッシュを作成する。※※hash
 
-def create_hash(keys, values)
-  hash = Hash[keys.zip values] # -> 引数をhash化、zip接続する。
-end
-# メソッドを処理に当てはめる。
+# def create_hash(keys, values)
+#   # hash = Hash[keys.zip values]   # 上下(処理)どちらも同じ結果になる。
+#   (keys).zip(values).to_h
+# end
+# # メソッドを処理に当てはめる、引数をhash化、zip接続する。
 
-p create_hash(["id:1","id:2","id:3"],["kajaa","waa","yassa"])
+# p create_hash(["id:1","id:2","id:3"],[:kajaa,:waa,:yassa])
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
